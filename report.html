@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+</head>
+
+<style>
+    body{
+    background-color: rgb(160, 159, 159);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color:whitesmoke;
+    height: 155px;
+    display: flex;
+    flex-direction: row;  /*ka bkata column an row bota*/
+    justify-content: space-between;     /* ave hami brna raxa domahike yani pevanan */
+    border-bottom: 1.5px solid black;
+    }
+
+    
+    .header{
+    background-color:whitesmoke;
+    position: relative;
+    height: 210px;
+    border-bottom: 1.5px solid black;
+}
+
+
+.left-section{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    } 
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #04AA6D;
+    margin: 4px 4px;
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+a:hover {
+    background-color:cadetblue;
+    color: black;
+}
+
+
+.h{
+    margin: auto;     
+    text-align: center; 
+}
+
+.t-h{
+    padding-top: 20px;
+    padding-bottom: 29px;
+
+}
+
+
+.m-h input{
+    height: 26px;
+    width: 170px;
+    font-size: 15.5px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+label{
+    font-size: 22px;
+}
+select{
+    font-size: 20px;
+    margin-left: 8px;
+    width: 220px;
+    padding: 4px ;
+}
+.b-h input{
+    font-weight: 700;
+    height: 27px;
+    width: 99px;
+    margin-top: 36px;
+    margin-left: 17px;
+}
+
+@media(max-width:477px){
+    .header{
+        height: 320px;
+    }
+    label{
+    font-size: 20px;
+}
+select{
+    font-size: 17px;
+    margin-left: 8px;
+    width: 200px;
+    padding: 2px ;
+}
+    #ii{
+        margin-left: 67px;
+    }
+}
+</style>
+<body>
+<div class="header">
+
+            <div class="left-section">
+            <a  href="home.php" class="next" > &laquo; Back </a>
+            </div>
+
+
+            <div class="h">
+                <div class="t-h">
+                <label >Project:</label>
+                <select>
+                    <option value="volvo">DDK</option>
+                    <option value="saab">Grand</option>
+                </select>
+
+                <div class="m-h">
+                    <label> Date:</label>
+                    <input type="date">
+                    <input id="ii" type="date">
+                </div>
+
+                <div class="b-h">
+                    <input type="submit" value="Search">
+                    <input type="submit" value="All Project">
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>

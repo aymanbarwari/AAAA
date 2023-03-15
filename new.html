@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+</head>
+<body>
+<style>
+body{
+    background-color: rgb(160, 159, 159);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-color:whitesmoke;
+    position: relative;
+    height: 190px;
+    border-bottom: 1.5px solid black;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    } 
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #04AA6D;
+    margin: 4px 4px;
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+a:hover {
+    background-color:cadetblue;
+    color: black;
+}
+.h{
+    margin: auto;     
+    text-align: center; 
+}
+
+.t-h{
+    padding-top: 20px;
+    padding-bottom: 17px;
+
+}
+
+
+.m-h input{
+    height: 25px;
+    width: 240px;
+    font-size: 18px;
+}
+.b-h input{
+    font-weight: 700;
+    height: 26px;
+    width: 120px;
+    margin-top: 36px;
+    margin-left: 17px;
+}
+
+@media(max-width:414px){
+    .header{
+        height: 170px;
+    }
+    a{
+        font-size: 11px;
+    }
+    .t-h{
+        font-size: 11.5px;
+    }
+    .m-h input{
+    height: 18px;
+    width: 170px;
+    font-size: 14px;
+    }
+    .b-h{
+        margin-right: 46px;
+    }
+    .b-h input{
+    font-size: 10.5px;
+    height: 21px;
+    width: 60px; 
+}
+}
+</style>
+
+<body>
+<div class="header"> 
+    
+    <div class="left-section">
+        <a  href="home.php" class="next" > &laquo; Back </a>
+    </div>
+
+    <div class="h">
+        <div class="t-h">
+            <h2>Project Name</h2>
+        </div>
+
+        <div class="m-h">
+            <input type="text" >      
+        </div>
+
+        <div class="b-h">
+            <input type="button" value="Add">
+            <input type="button" value="Edit">
+            <input type="button" value="Delete">
+        </div>
+    </div>
+
+</div> 
+</body>
+
+</html>
